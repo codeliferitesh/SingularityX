@@ -20,12 +20,8 @@ export function App() {
     if (saved === 'dark' || saved === 'light' || saved === 'retro') {
       return saved;
     }
-    // 2. Fall back to system preference
-    if (typeof window !== 'undefined' && window.matchMedia) {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      return prefersDark ? 'dark' : 'light';
-    }
-    return 'dark';
+    // 2. Default directly to retro mode on initial open
+    return 'retro';
   });
 
   useEffect(() => {

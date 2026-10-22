@@ -1,10 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="retro">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SingularityX — Building things. Breaking limits.</title>
     <meta name="description" content="SingularityX is an independent five-member developer and hardware hackathon team from India. Building things, experimenting, and turning ideas into working projects." />
+    
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('singularityx-theme');
+          document.documentElement.setAttribute('data-theme', saved || 'retro');
+        } catch (e) {}
+      })();
+    </script>
     
     <!-- Open Graph / Meta -->
     <meta property="og:type" content="website" />
