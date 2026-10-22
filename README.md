@@ -56,43 +56,6 @@ Designed with an authentic developer aesthetic: editorial typography, generous w
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone & Install
-
-```bash
-git clone https://github.com/<your-username>/singularityx.git
-cd singularityx
-npm install
-```
-
-### 2. Run Local Development Server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### 3. Production Build
-
-```bash
-npm run build
-npm run preview
-```
-
----
-
-## ⚙️ Configuration & Customization
-
-All team members, contact emails, projects, and exploration topics are managed in one central file:
-👉 **[`src/teamConfig.ts`](./src/teamConfig.ts)**
-
-Team member photographs are placed inside:
-📁 **[`public/team/`](./public/team/)**
-
----
-
 ## 📬 Contact & Inquiries
 
 - **Primary Dispatch**: [mercsyntax@gmail.com](mailto:mercsyntax@gmail.com)
@@ -102,4 +65,4 @@ Team member photographs are placed inside:
 
 ## 📄 License
 
-Built by five friends, with curiosity and code. © 2026 SingularityX.
+Built by five friends, with curiosity and code. © 2027 SingularityX.

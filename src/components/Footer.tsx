@@ -3,7 +3,7 @@ import { siteConfig } from '../teamConfig';
 import { LiveClock } from './LiveClock';
 
 export const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = 2027;
 
   const handleScrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
