@@ -65,7 +65,6 @@ export const siteConfig: SiteConfig = {
   contactEmails: [
     "mercsyntax@gmail.com",
     "stacksolveofficial@gmail.com",
-    "tarumani24@gmail.com",
   ],
   footerContacts: [
     {

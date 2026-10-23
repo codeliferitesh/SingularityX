@@ -52,7 +52,7 @@ export const Contact: React.FC = () => {
                     <div key={email} className="contact-email-row">
                       <div className="contact-email-meta">
                         <span className="contact-email-tag">
-                          {idx === 0 ? 'PRIMARY' : idx === 1 ? 'SECONDARY' : idx === 2 ? 'TERTIARY' : 'DIRECT'}
+                          {idx === 0 ? 'PRIMARY' : 'SECONDARY'}
                         </span>
                         <a
                           href={`mailto:${email}`}
