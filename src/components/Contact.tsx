@@ -47,13 +47,12 @@ export const Contact: React.FC = () => {
               <div className="contact-emails-list">
                 {emailList.map((email, idx) => {
                   const isCopied = copiedEmail === email;
-                  const isPrimary = idx === 0;
 
                   return (
                     <div key={email} className="contact-email-row">
                       <div className="contact-email-meta">
                         <span className="contact-email-tag">
-                          {isPrimary ? 'PRIMARY' : 'SECONDARY'}
+                          {idx === 0 ? 'PRIMARY' : idx === 1 ? 'SECONDARY' : 'DIRECT'}
                         </span>
                         <a
                           href={`mailto:${email}`}

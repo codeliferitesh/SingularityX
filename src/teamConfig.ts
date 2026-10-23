@@ -65,6 +65,7 @@ export const siteConfig: SiteConfig = {
   contactEmails: [
     "mercsyntax@gmail.com",
     "stacksolveofficial@gmail.com",
+    "tarumani24@gmail.com",
   ],
   footerContacts: [
     {
@@ -74,6 +75,10 @@ export const siteConfig: SiteConfig = {
     {
       label: "Contact Ritesh K Verma",
       email: "stacksolveofficial@gmail.com",
+    },
+    {
+      label: "Contact Tarun Mani",
+      email: "tarumani24@gmail.com",
     },
   ],
 
@@ -167,7 +172,7 @@ export const siteConfig: SiteConfig = {
       initials: "AA",
       photoUrl: "/team/aman.jpg",
       objectPosition: "center 18%",
-      linkedInUrl: "https://www.linkedin.com/in/rishav-raj-95bba1382",
+      linkedInUrl: "https://www.linkedin.com/in/aman-agarwal-2b03b8370",
     },
   ],
 };

@@ -4,12 +4,14 @@ interface LiveClockProps {
   showSeconds?: boolean;
   className?: string;
   variant?: 'header' | 'status' | 'badge';
+  use24Hour?: boolean;
 }
 
 export const LiveClock: React.FC<LiveClockProps> = ({
   showSeconds = true,
   className = '',
   variant = 'header',
+  use24Hour = true,
 }) => {
   const [timeStr, setTimeStr] = useState<string>('');
 
@@ -22,7 +24,8 @@ export const LiveClock: React.FC<LiveClockProps> = ({
         hour: '2-digit',
         minute: '2-digit',
         ...(showSeconds ? { second: '2-digit' } : {}),
-        hour12: true,
+        hour12: !use24Hour,
+        ...(use24Hour ? { hourCycle: 'h23' } : {}),
       };
       
       const formatter = new Intl.DateTimeFormat('en-IN', options);
@@ -32,7 +35,7 @@ export const LiveClock: React.FC<LiveClockProps> = ({
     updateTime();
     const interval = setInterval(updateTime, 1000);
     return () => clearInterval(interval);
-  }, [showSeconds]);
+  }, [showSeconds, use24Hour]);
 
   if (variant === 'status') {
     return (
